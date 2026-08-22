@@ -1,0 +1,404 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Table Reservation Manager · 2024</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;600&family=Poppins:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="css/table-reservation-manager-styles.css" />
+</head>
+
+<body>
+  <header class="site-header">
+    <nav class="site-nav" aria-label="Case study navigation">
+      <a class="back-link" href="index.html" aria-label="Back to portfolio"><span aria-hidden="true">←</span> Back</a>
+      <span class="nav-title">Table Reservation Manager · 2024</span>
+    </nav>
+  </header>
+  <main id="top">
+    <section class="hero section-tint">
+      <div class="content hero-content">
+        <p class="eyebrow"><span></span> Case Study · Product Design</p>
+        <h1>Designing Reservation Operations for <em>F&amp;B Outlets.</em></h1>
+        <p class="lead">A live operational system that helps F&B outlets manage walk-ins, reservations, queues, live
+          table availability, customer details, incoming customer inquiries, feedbacks, sessions and slots in real time
+          and follow-up actions from one system.</p>
+        <dl class="meta-grid">
+          <div>
+            <dt>My Role</dt>
+            <dd>UI/UX Designer</dd>
+          </div>
+          <div>
+            <dt>Platform</dt>
+            <dd>Web + Mobile </dd>
+          </div>
+          <div>
+            <dt>Duration</dt>
+            <dd>2 Years of Ownership</dd>
+          </div>
+          <div>
+            <dt>Team</dt>
+            <dd>1 Designer · 1 PM · 3 Dev’s</dd>
+          </div>
+        </dl>
+      </div>
+    </section>
+
+    <section class="content section-block intro-block">
+      <div class="section-label"><span>01</span><i></i>Problem</div>
+      <div class="narrow-copy">
+        <h2>F&amp;B Outlets weren’t,<br /><em>just taking reservations.</em></h2>
+        <p>Restaurants were not only taking reservations. They wanted to manage a live
+          operational system with multiple statuses, channels, payments, and edge cases.</p>
+      </div>
+      <div class="card-grid three-up">
+        <article class="info-card">
+          <div class="card-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M2.06251 11.6514C1.97916 11.8759 1.97916 12.1229 2.06251 12.3474C2.87421 14.3155 4.25202 15.9983 6.02128 17.1825C7.79053 18.3666 9.87155 18.9988 12.0005 18.9988C14.1295 18.9988 16.2105 18.3666 17.9797 17.1825C19.749 15.9983 21.1268 14.3155 21.9385 12.3474C22.0218 12.1229 22.0218 11.8759 21.9385 11.6514C21.1268 9.68324 19.749 8.00042 17.9797 6.81628C16.2105 5.63214 14.1295 5 12.0005 5C9.87155 5 7.79053 5.63214 6.02128 6.81628C4.25202 8.00042 2.87421 9.68324 2.06251 11.6514Z"
+                stroke="#3C85EC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+              <path
+                d="M12 15C13.6569 15 15 13.6569 15 12C15 10.3431 13.6569 9 12 9C10.3431 9 9 10.3431 9 12C9 13.6569 10.3431 15 12 15Z"
+                stroke="#3C85EC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+          </div>
+          <h3>Visibility Problem</h3>
+          <p>Staff needed to know who is booked, queued, served, cancelled, and paid.</p>
+        </article>
+        <article class="info-card">
+          <div class="card-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M4.04081 4.69181C4.00134 4.60072 3.99017 4.49988 4.00875 4.40236C4.02732 4.30485 4.07479 4.21517 4.14498 4.14498C4.21517 4.07479 4.30485 4.02732 4.40236 4.00875C4.49988 3.99017 4.60072 4.00134 4.69181 4.04081L20.6918 10.5408C20.7891 10.5804 20.8714 10.6497 20.9271 10.7388C20.9828 10.8279 21.009 10.9322 21.0021 11.037C20.9951 11.1419 20.9553 11.2418 20.8883 11.3227C20.8213 11.4037 20.7305 11.4614 20.6288 11.4878L14.5048 13.0678C14.1588 13.1568 13.8429 13.3368 13.59 13.5891C13.3372 13.8415 13.1565 14.157 13.0668 14.5028L11.4878 20.6288C11.4614 20.7305 11.4037 20.8213 11.3227 20.8883C11.2418 20.9553 11.1419 20.9951 11.037 21.0021C10.9322 21.009 10.8279 20.9828 10.7388 20.9271C10.6497 20.8714 10.5804 20.7891 10.5408 20.6918L4.04081 4.69181Z"
+                stroke="#3C85EC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+          </div>
+          <h3>Action Problem</h3>
+          <p>Each booking needed reminders, notes, edits, cancellation, table assignment, and source context.</p>
+        </article>
+        <article class="info-card">
+          <div class="card-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M21 7.99795C20.9996 7.64722 20.9071 7.30276 20.7315 6.99911C20.556 6.69546 20.3037 6.44331 20 6.26795L13 2.26795C12.696 2.09241 12.3511 2 12 2C11.6489 2 11.304 2.09241 11 2.26795L4 6.26795C3.69626 6.44331 3.44398 6.69546 3.26846 6.99911C3.09294 7.30276 3.00036 7.64722 3 7.99795V15.9979C3.00036 16.3487 3.09294 16.6931 3.26846 16.9968C3.44398 17.3004 3.69626 17.5526 4 17.7279L11 21.7279C11.304 21.9035 11.6489 21.9959 12 21.9959C12.3511 21.9959 12.696 21.9035 13 21.7279L20 17.7279C20.3037 17.5526 20.556 17.3004 20.7315 16.9968C20.9071 16.6931 20.9996 16.3487 21 15.9979V7.99795Z"
+                stroke="#3C85EC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+              <path d="M3.30078 7L12.0008 12L20.7008 7" stroke="#3C85EC" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round" />
+              <path d="M12 22V12" stroke="#3C85EC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+          </div>
+          <h3>Scale Problem</h3>
+          <p>New modules kept getting added, so the IA and components needed stronger structure.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="content section-block">
+      <div class="section-label"><span>02</span><i></i>Target Users</div>
+      <div class="narrow-copy">
+        <h2>Three teams, <br /><em>one operational truth.</em></h2>
+        <p>Different roles look at the same product through very different lenses. The
+          design had to serve speed, oversight, and insight — without compromise.</p>
+      </div>
+      <div class="card-grid three-up role-cards">
+        <article class="info-card">
+          <div class="card-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M15 2H9C8.44772 2 8 2.44772 8 3V5C8 5.55228 8.44772 6 9 6H15C15.5523 6 16 5.55228 16 5V3C16 2.44772 15.5523 2 15 2Z"
+                stroke="#3A84EC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+              <path
+                d="M16 4H18C18.5304 4 19.0391 4.21071 19.4142 4.58579C19.7893 4.96086 20 5.46957 20 6V20C20 20.5304 19.7893 21.0391 19.4142 21.4142C19.0391 21.7893 18.5304 22 18 22H6C5.46957 22 4.96086 21.7893 4.58579 21.4142C4.21071 21.0391 4 20.5304 4 20V6C4 5.46957 4.21071 4.96086 4.58579 4.58579C4.96086 4.21071 5.46957 4 6 4H8"
+                stroke="#3A84EC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+              <path d="M12 11H16" stroke="#3A84EC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+              <path d="M12 16H16" stroke="#3A84EC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+              <path d="M8 11H8.01" stroke="#3A84EC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+              <path d="M8 16H8.01" stroke="#3A84EC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+            </svg></div>
+          <h3>Host/Front Desk</h3>
+          <p>Create bookings, manage queue, call customers, assign tables.</p>
+        </article>
+        <article class="info-card">
+          <div class="card-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z"
+                stroke="#3A84EC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+              <path
+                d="M12 13C13.6569 13 15 11.6569 15 10C15 8.34315 13.6569 7 12 7C10.3431 7 9 8.34315 9 10C9 11.6569 10.3431 13 12 13Z"
+                stroke="#3A84EC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+              <path
+                d="M7 20.662V19C7 18.4696 7.21071 17.9609 7.58579 17.5858C7.96086 17.2107 8.46957 17 9 17H15C15.5304 17 16.0391 17.2107 16.4142 17.5858C16.7893 17.9609 17 18.4696 17 19V20.662"
+                stroke="#3A84EC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+            </svg></div>
+          <h3>Manager</h3>
+          <p>Monitor sessions, capacity, paid bookings, reports, and staff actions.</p>
+        </article>
+        <article class="info-card">
+          <div class="card-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path d="M14 17H5" stroke="#3A84EC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+              <path d="M19 7H10" stroke="#3A84EC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+              <path
+                d="M17 20C18.6569 20 20 18.6569 20 17C20 15.3431 18.6569 14 17 14C15.3431 14 14 15.3431 14 17C14 18.6569 15.3431 20 17 20Z"
+                stroke="#3A84EC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+              <path
+                d="M7 10C8.65685 10 10 8.65685 10 7C10 5.34315 8.65685 4 7 4C5.34315 4 4 5.34315 4 7C4 8.65685 5.34315 10 7 10Z"
+                stroke="#3A84EC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+            </svg></div>
+          <h3>Owner/Admin</h3>
+          <p>Visibility into demand, revenue, feedback, and customer history.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section-tint image-section">
+      <div class="content split-layout product-split">
+        <div>
+          <div class="section-label"><span>03</span><i></i>Solution</div>
+          <h2>A B2B tool built for <br /><em>managing bookings.</em></h2>
+          <p>Table Reservation Manager is a SaaS product used by F&amp;B outlets across India to manage incoming
+            bookings from multiple sources — Zomato, Dineout, direct calls etc.</p>
+        </div>
+        <img class="product-shot" src="assets/images/product-shot.png" alt="Table Reservation Manager dashboard" />
+      </div>
+    </section>
+
+    <section class="content section-block">
+      <div class="section-label"><span>04</span><i></i>Product Overview</div>
+      <div class="narrow-copy">
+        <h2>From bookings to a <br /><em>complete reservation system.</em></h2>
+        <p>The product grew from reservation handling into a larger operational layer connecting channels, queues,
+          tables, payments, forms, and reports.</p>
+      </div>
+      <div class="flow-grid">
+        <article class="flow-item">
+          <div class="flow-icon"><svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path d="M18.3346 10H13.3346L11.668 12.5H8.33463L6.66797 10H1.66797" stroke="#3A84EC"
+                stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round" />
+              <path
+                d="M4.54297 4.25703L1.66797 9.9987V14.9987C1.66797 15.4407 1.84356 15.8646 2.15612 16.1772C2.46868 16.4898 2.89261 16.6654 3.33464 16.6654H16.668C17.11 16.6654 17.5339 16.4898 17.8465 16.1772C18.159 15.8646 18.3346 15.4407 18.3346 14.9987V9.9987L15.4596 4.25703C15.3217 3.97935 15.1089 3.74567 14.8454 3.58226C14.5819 3.41885 14.278 3.3322 13.968 3.33203H6.03463C5.72456 3.3322 5.42069 3.41885 5.15717 3.58226C4.89366 3.74567 4.68095 3.97935 4.54297 4.25703Z"
+                stroke="#3A84EC" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round" />
+            </svg></div>
+          <h3>Booking Sources</h3>
+          <p>Walk-ins, Zomato, Dineout, EazyDiner, form entries</p>
+        </article>
+        <article class="flow-item">
+          <div class="flow-icon">
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <g clip-path="url(#clip0_578_241)">
+                <path
+                  d="M12.5013 1.66797H7.5013C7.04106 1.66797 6.66797 2.04106 6.66797 2.5013V4.16797C6.66797 4.62821 7.04106 5.0013 7.5013 5.0013H12.5013C12.9615 5.0013 13.3346 4.62821 13.3346 4.16797V2.5013C13.3346 2.04106 12.9615 1.66797 12.5013 1.66797Z"
+                  stroke="#3A84EC" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round" />
+                <path
+                  d="M13.332 3.33203H14.9987C15.4407 3.33203 15.8646 3.50763 16.1772 3.82019C16.4898 4.13275 16.6654 4.55667 16.6654 4.9987V16.6654C16.6654 17.1074 16.4898 17.5313 16.1772 17.8439C15.8646 18.1564 15.4407 18.332 14.9987 18.332H4.9987C4.55667 18.332 4.13275 18.1564 3.82019 17.8439C3.50763 17.5313 3.33203 17.1074 3.33203 16.6654V4.9987C3.33203 4.55667 3.50763 4.13275 3.82019 3.82019C4.13275 3.50763 4.55667 3.33203 4.9987 3.33203H6.66536"
+                  stroke="#3A84EC" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M7.5 11.6667L9.16667 13.3333L12.5 10" stroke="#3A84EC" stroke-width="1.66667"
+                  stroke-linecap="round" stroke-linejoin="round" />
+              </g>
+              <defs>
+                <clipPath id="clip0_578_241">
+                  <rect width="20" height="20" fill="white" />
+                </clipPath>
+              </defs>
+            </svg>
+          </div>
+          <h3>Reservation / Queue</h3>
+          <p>Booking cards, sessions, reminders, cancellations</p>
+        </article>
+        <article class="flow-item">
+          <div class="flow-icon"><svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M15.8346 17.5V15.8333C15.8346 14.9493 15.4834 14.1014 14.8583 13.4763C14.2332 12.8512 13.3854 12.5 12.5013 12.5H7.5013C6.61725 12.5 5.7694 12.8512 5.14428 13.4763C4.51916 14.1014 4.16797 14.9493 4.16797 15.8333V17.5"
+                stroke="#3A84EC" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round" />
+              <path
+                d="M10.0013 9.16667C11.8423 9.16667 13.3346 7.67428 13.3346 5.83333C13.3346 3.99238 11.8423 2.5 10.0013 2.5C8.16035 2.5 6.66797 3.99238 6.66797 5.83333C6.66797 7.67428 8.16035 9.16667 10.0013 9.16667Z"
+                stroke="#3A84EC" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round" />
+            </svg></div>
+          <h3>Customer Details</h3>
+          <p>Profile, history, preferences, loyalty</p>
+        </article>
+        <article class="flow-item">
+          <div class="flow-icon">
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <g clip-path="url(#clip0_578_264)">
+                <path
+                  d="M13.3344 1.66797L11.4178 3.58464C10.9597 4.05196 10.7031 4.68025 10.7031 5.33464C10.7031 5.98902 10.9597 6.61731 11.4178 7.08464L12.9178 8.58464C13.3851 9.0427 14.0134 9.29928 14.6678 9.29928C15.3222 9.29928 15.9504 9.0427 16.4178 8.58464L18.3344 6.66797"
+                  stroke="#3A84EC" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round" />
+                <path
+                  d="M12.4997 12.5L2.74973 2.75C2.41713 3.07588 2.1529 3.46485 1.97252 3.89413C1.79213 4.3234 1.69922 4.78436 1.69922 5.25C1.69922 5.71564 1.79213 6.1766 1.97252 6.60587C2.1529 7.03515 2.41713 7.42412 2.74973 7.75L8.83306 13.8333C9.4164 14.4167 10.4997 14.4167 11.1664 13.8333L12.4997 12.5ZM12.4997 12.5L18.3331 18.3333"
+                  stroke="#3A84EC" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M1.75 18.168L7.08333 12.918" stroke="#3A84EC" stroke-width="1.66667" stroke-linecap="round"
+                  stroke-linejoin="round" />
+                <path d="M15.8333 4.16797L10 10.0013" stroke="#3A84EC" stroke-width="1.66667" stroke-linecap="round"
+                  stroke-linejoin="round" />
+              </g>
+              <defs>
+                <clipPath id="clip0_578_264">
+                  <rect width="20" height="20" fill="white" />
+                </clipPath>
+              </defs>
+            </svg>
+          </div>
+          <h3>Table Assignment</h3>
+          <p>Live status, queue visibility, capacity</p>
+        </article>
+        <article class="flow-item">
+          <div class="flow-icon"><svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M2.5 2.5V15.8333C2.5 16.2754 2.67559 16.6993 2.98816 17.0118C3.30072 17.3244 3.72464 17.5 4.16667 17.5H17.5"
+                stroke="#3A84EC" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round" />
+              <path d="M15.832 7.5L11.6654 11.6667L8.33203 8.33333L5.83203 10.8333" stroke="#3A84EC"
+                stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round" />
+            </svg></div>
+          <h3>Reports / Feedback</h3>
+          <p>Analytics, ratings, transactions, exports</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="content section-block ownership-section">
+      <div class="section-label"><span>05</span><i></i>My Role &amp; Ownership</div>
+      <div class="split-layout">
+        <div class="narrow-copy">
+          <h2>From existing workflows <br /><em>to better experiences.</em></h2>
+          <p>I took ownership of an existing Reservation Manager product and evolved it carefully by understanding live
+            restaurant operations, inherited workflows and stakeholder expectations before designing.</p>
+        </div>
+        <div class="ownership-card">
+          <h3><span></span> Owned</h3>
+          <ul>
+            <li>UX Research — field visits, User interviews</li>
+            <li>Focused feature redesigns & New modules launched</li>
+            <li>UI Design — Web & Mobile Guidelines</li>
+            <li>Different types of constraints faced</li>
+            <li>Dev handoff and QA across web + mobile</li>
+            <li>Cross-functional alignment with PM and engineering</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="content section-block visual-section">
+      <div class="section-label"><span>06</span><i></i>Web & Mobile Guidelines</div>
+      <div class="narrow-copy">
+        <h2>From fragmented features <br /><em>to a unified system.</em></h2>
+      </div>
+      <div class="visual-grid fragmented-features"><img src="assets/images/unified-system-01.png"
+          alt="Reservation interface" /><img src="assets/images/unified-system-02.png" alt="Reservation workflow" /><img
+          src="assets/images/unified-system-03.png" alt="Table management interface" /></div>
+    </section>
+
+    <section class="section-block quality-section">
+      <div class="content">
+        <div class="section-label"><span>07</span><i></i>UI/UX Audit</div>
+        <div class="narrow-copy">
+          <h2>Finding product <br /><em>quality gaps across web &amp; mobile.</em></h2>
+        </div>
+        <div class="dark-visuals">
+          <div class="dark-visuals-item">
+            <img src="assets/images/web_app.png" alt="Web App" />
+            <strong>Web App</strong>
+          </div>
+          <div class="dark-visuals-item">
+            <img src="assets/images/mobile_app.png" alt="Mobile App" />
+            <strong>Mobile App</strong>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="content section-block feedback-section">
+      <div class="section-label"><span>08</span><i></i>Outlet Visits &amp; Interviews</div>
+      <div class="narrow-copy">
+        <h2>Turning outlets feedback <br /><em>into product priorities.</em></h2>
+      </div>
+      <div class="feedback-grid">
+        <div class="ownership-card white-background">
+          <h3><span></span>What I Did</h3>
+          <ul>
+            <li>Created a questionnaire for staff with RM</li>
+            <li>Visited multiple outlets and spoke with staff directly</li>
+            <li>Observed pain points around reservations, queues, table handling, and daily operations</li>
+            <li>Consolidated feedback into a structured visit report</li>
+          </ul>
+        </div>
+        <div class="ownership-card white-background">
+          <h3><span></span>What I Asked</h3>
+          <ul>
+            <li>How easy is it to manage queues, reservations, and tables?</li>
+            <li>Which parts of the app feel confusing or tricky?</li>
+            <li>What happens during peak hours?</li>
+            <li>Are labels, buttons, and touch areas clear enough?</li>
+            <li>Which steps slow down the daily workflow?</li>
+          </ul>
+        </div>
+        <div class="ownership-card white-background">
+          <h3><span></span>What I Learned</h3>
+          <ul>
+            <li>Sync reliability between POS and RM was a major concern</li>
+            <li>Queue/table status mismatch created confusion during busy hours</li>
+            <li>Staff needed faster access to main actions</li>
+            <li>Feature discoverability mattered more than visual polish</li>
+            <li>Weekend and peak-hour workflows needed special attention</li>
+          </ul>
+        </div>
+      </div>
+      <div class="visual-grid feedback-image-grid" aria-label="Outlet visit and interview visuals">
+        <img src="assets/images/reservation-workflow-01.png"
+          alt="Reservation workflow discussed during an outlet visit" />
+        <img src="assets/images/reservation-workflow-02.png"
+          alt="Reservation interface reviewed during an outlet interview" />
+        <img src="assets/images/reservation-workflow-03.png" alt="Table management workflow from outlet research" />
+        <img src="assets/images/reservation-workflow-04.png" alt="Table management workflow from outlet research" />
+      </div>
+    </section>
+
+    <section class="section-tint learning-section">
+      <div class="content">
+        <div class="section-label"><span>09</span><i></i>Learning &amp; Improvements</div>
+        <div class="narrow-copy">
+          <h2>Understanding the Product <em>Beyond the UI.</em></h2>
+          <p>After restaurant visits and UI/UX audits, my learning shifted from screen-level improvement to
+            understanding how operational products behave in real F&amp;B outlet environments.</p>
+        </div>
+        <div class="learning-list">
+          <article class="info-card">
+            <span class="info-serial-no">Learning 01</span>
+            <h3>Operational UX ≠ Visual Polish</h3>
+            <p>Operational UX is not only about clean screens. It is about helping staff act quickly during peak hours,
+              when queue, table, reservation, and customer information must stay understandable at a glance. Speed and
+              clarity beat aesthetics every time in live restaurant operations.</p>
+          </article>
+          <article class="info-card">
+            <span class="info-serial-no">Learning 02</span>
+            <h3>Audits Reveal Systemic Patterns</h3>
+            <p>Audits helped me see repeated patterns: unclear labels, missing states, inconsistent hierarchy, weak
+              discoverability, and platform differences can slowly reduce trust in a live product. These aren't one-off
+              bugs — they're signals of structural design debt that needs systematic resolution.</p>
+          </article>
+          <article class="info-card">
+            <span class="info-serial-no">Learning 03</span>
+            <h3>Real Context Changes Everything</h3>
+            <p>Restaurant visits made the product feel less abstract. Real feedback showed that sync reliability, speed,
+              and confidence in status updates matter more than visual polish alone. Being present in the environment
+              transformed how I prioritized and framed design decisions.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer">Thanks for reading</footer>
+  <script src="js/table-reservation-manager-script.js" defer></script>
+</body>
+
+</html>

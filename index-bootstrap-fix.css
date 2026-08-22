@@ -1,0 +1,202 @@
+/* ============================================
+   BOOTSTRAP COMPATIBILITY FIX
+   Image Grid Responsiveness
+   ============================================ */
+
+/* Make image containers responsive */
+.grid-image-container {
+    max-width: 100%;
+    height: auto !important;
+    overflow: hidden;
+    border-radius: 1rem;
+}
+
+.grid-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+/* Image row - flex container */
+.image-row {
+    display: flex;
+    gap: 10px;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+/* Image columns */
+.image-col {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* ============================================
+   MOBILE DEVICES (< 640px)
+   ============================================ */
+@media (max-width: 639px) {
+    .image-row {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .image-row .grid-image-container {
+        width: 100% !important;
+        height: auto !important;
+        aspect-ratio: auto;
+    }
+
+    .image-col {
+        width: 100%;
+    }
+
+    .image-col .grid-image-container {
+        width: 100% !important;
+        height: auto !important;
+        min-height: 200px;
+    }
+}
+
+/* ============================================
+   TABLET DEVICES (640px - 1023px)
+   ============================================ */
+@media (min-width: 640px) and (max-width: 1023px) {
+    .image-row {
+        flex-direction: row;
+        gap: 10px;
+        flex-wrap: wrap;
+    }
+
+    .image-row:first-child {
+        gap: 10px;
+    }
+
+    .image-row:first-child .grid-image-container {
+        flex: 1;
+        min-width: 200px;
+        height: auto;
+        aspect-ratio: 16/9;
+    }
+
+    .image-row:last-child .grid-image-container {
+        flex: 1;
+        min-width: 150px;
+        height: auto;
+        aspect-ratio: 1/1;
+    }
+
+    .image-col {
+        flex: 1;
+        min-width: 150px;
+        gap: 0.75rem;
+    }
+
+    .image-col .grid-image-container {
+        width: 100% !important;
+        height: auto !important;
+        aspect-ratio: 1/1;
+    }
+}
+
+/* ============================================
+   DESKTOP DEVICES (≥ 1024px)
+   ============================================ */
+@media (min-width: 1024px) {
+    /* First row - landscape images */
+    .image-row:first-child {
+        display: flex;
+        gap: 10px;
+        align-items: stretch;
+    }
+
+    .image-row:first-child .grid-image-container:nth-child(1) {
+        width: 720px;
+        height: 372px;
+        flex-shrink: 0;
+    }
+
+    .image-row:first-child .grid-image-container:nth-child(2) {
+        width: 444px;
+        height: 368px;
+        flex-shrink: 0;
+    }
+
+    /* Second row - mixed layout */
+    .image-row:last-child {
+        display: flex;
+        gap: 10px;
+        align-items: stretch;
+    }
+
+    .image-row:last-child .grid-image-container:nth-child(1) {
+        width: 380px;
+        height: 368px;
+        flex-shrink: 0;
+    }
+
+    .image-row:last-child .grid-image-container:nth-child(2) {
+        width: 270px;
+        height: 368px;
+        flex-shrink: 0;
+    }
+
+    .image-col:nth-child(3) {
+        flex: 250 0 250px;
+        gap: 10px;
+    }
+
+    .image-col:nth-child(3) .grid-image-container:nth-child(1) {
+        width: 100% !important;
+        height: 179px !important;
+        flex-shrink: 0;
+    }
+
+    .image-col:nth-child(3) .grid-image-container:nth-child(2) {
+        width: 100% !important;
+        height: 179px !important;
+        flex-shrink: 0;
+    }
+
+    .image-col:nth-child(4) {
+        flex: 228 0 228px;
+        gap: 10px;
+    }
+
+    .image-col:nth-child(4) .grid-image-container:nth-child(1) {
+        width: 100% !important;
+        height: 179px !important;
+        flex-shrink: 0;
+    }
+
+    .image-col:nth-child(4) .grid-image-container:nth-child(2) {
+        width: 100% !important;
+        height: 179px !important;
+        flex-shrink: 0;
+    }
+}
+
+/* ============================================
+   ENSURE BOX-SIZING COMPATIBILITY
+   ============================================ */
+.grid-image-container,
+.image-row,
+.image-col {
+    box-sizing: border-box;
+}
+
+/* Prevent Bootstrap containers from restricting images */
+.footer-section {
+    overflow-x: hidden;
+}
+
+.footer-container {
+    width: 100%;
+    overflow-x: hidden;
+}
+
+.image-grid {
+    width: 100%;
+    overflow-x: hidden;
+}
